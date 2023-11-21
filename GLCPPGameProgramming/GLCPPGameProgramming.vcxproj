@@ -19,25 +19,33 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="02\Actor.cpp" />
-    <ClCompile Include="02\AnimSpriteComponent.cpp" />
-    <ClCompile Include="02\BGSpriteComponent.cpp" />
-    <ClCompile Include="02\Component.cpp" />
-    <ClCompile Include="02\Game.cpp" />
-    <ClCompile Include="02\Main.cpp" />
-    <ClCompile Include="02\Math.cpp" />
-    <ClCompile Include="02\Ship.cpp" />
-    <ClCompile Include="02\SpriteComponent.cpp" />
+    <ClCompile Include="03\Actor.cpp" />
+    <ClCompile Include="03\Asteroid.cpp" />
+    <ClCompile Include="03\CircleComponent.cpp" />
+    <ClCompile Include="03\Component.cpp" />
+    <ClCompile Include="03\Game.cpp" />
+    <ClCompile Include="03\InputComponent.cpp" />
+    <ClCompile Include="03\Laser.cpp" />
+    <ClCompile Include="03\Main.cpp" />
+    <ClCompile Include="03\Math.cpp" />
+    <ClCompile Include="03\MoveComponent.cpp" />
+    <ClCompile Include="03\Random.cpp" />
+    <ClCompile Include="03\Ship.cpp" />
+    <ClCompile Include="03\SpriteComponent.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="02\Actor.h" />
-    <ClInclude Include="02\AnimSpriteComponent.h" />
-    <ClInclude Include="02\BGSpriteComponent.h" />
-    <ClInclude Include="02\Component.h" />
-    <ClInclude Include="02\Game.h" />
-    <ClInclude Include="02\Math.h" />
-    <ClInclude Include="02\Ship.h" />
-    <ClInclude Include="02\SpriteComponent.h" />
+    <ClInclude Include="03\Actor.h" />
+    <ClInclude Include="03\Asteroid.h" />
+    <ClInclude Include="03\CircleComponent.h" />
+    <ClInclude Include="03\Component.h" />
+    <ClInclude Include="03\Game.h" />
+    <ClInclude Include="03\InputComponent.h" />
+    <ClInclude Include="03\Laser.h" />
+    <ClInclude Include="03\Math.h" />
+    <ClInclude Include="03\MoveComponent.h" />
+    <ClInclude Include="03\Random.h" />
+    <ClInclude Include="03\Ship.h" />
+    <ClInclude Include="03\SpriteComponent.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
