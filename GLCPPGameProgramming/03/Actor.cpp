@@ -1,4 +1,4 @@
-// ----------------------------------------------------------------
+﻿// ----------------------------------------------------------------
 // From Game Programming in C++ by Sanjay Madhav
 // Copyright (C) 2017 Sanjay Madhav. All rights reserved.
 // 
@@ -24,7 +24,7 @@ Actor::~Actor() {
 	mGame->RemoveActor(this);
 	// Need to delete components
 	// Because ~Component calls RemoveComponent, need a different style loop
-	while (!mComponents.empty()){
+	while (!mComponents.empty()) {
 		delete mComponents.back();
 	}
 }
@@ -43,6 +43,20 @@ void Actor::UpdateComponents(float deltaTime) {
 }
 
 void Actor::UpdateActor(float deltaTime) {
+}
+
+void Actor::ProcessInput(const uint8_t* keyState) {
+	if (mState == EActive) {
+		// First process input for components
+		for (auto comp : mComponents) {
+			comp->ProcessInput(keyState);
+		}
+
+		ActorInput(keyState);
+	}
+}
+
+void Actor::ActorInput(const uint8_t* keyState) {
 }
 
 void Actor::AddComponent(Component* component) {
