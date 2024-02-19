@@ -15,81 +15,81 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="03\Actor.cpp">
+    <ClCompile Include="05\Actor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Asteroid.cpp">
+    <ClCompile Include="05\Asteroid.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\CircleComponent.cpp">
+    <ClCompile Include="05\CircleComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Component.cpp">
+    <ClCompile Include="05\Component.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Game.cpp">
+    <ClCompile Include="05\Game.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\InputComponent.cpp">
+    <ClCompile Include="05\InputComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Laser.cpp">
+    <ClCompile Include="05\Laser.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Main.cpp">
+    <ClCompile Include="05\Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Math.cpp">
+    <ClCompile Include="05\Math.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\MoveComponent.cpp">
+    <ClCompile Include="05\MoveComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Random.cpp">
+    <ClCompile Include="05\Random.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\Ship.cpp">
+    <ClCompile Include="05\Ship.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="03\SpriteComponent.cpp">
+    <ClCompile Include="05\SpriteComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="03\Actor.h">
+    <ClInclude Include="05\Actor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\Asteroid.h">
+    <ClInclude Include="05\Asteroid.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\CircleComponent.h">
+    <ClInclude Include="05\CircleComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\Component.h">
+    <ClInclude Include="05\Component.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\Game.h">
+    <ClInclude Include="05\Game.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\InputComponent.h">
+    <ClInclude Include="05\InputComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\Laser.h">
+    <ClInclude Include="05\Laser.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\Math.h">
+    <ClInclude Include="05\Math.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\MoveComponent.h">
+    <ClInclude Include="05\MoveComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\Random.h">
+    <ClInclude Include="05\Random.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\Ship.h">
+    <ClInclude Include="05\Ship.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="03\SpriteComponent.h">
+    <ClInclude Include="05\SpriteComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
