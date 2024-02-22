@@ -25,7 +25,7 @@ public:
 	void AddSprite(class SpriteComponent* sprite);
 	void RemoveSprite(class SpriteComponent* sprite);
 
-	SDL_Texture* GetTexture(const std::string& fileName);
+	class Texture* GetTexture(const std::string& fileName);
 
 	// Game-specific (add/remove asteroid)
 	void AddAsteroid(class Asteroid* ast);
@@ -35,11 +35,13 @@ private:
 	void ProcessInput();
 	void UpdateGame();
 	void GenerateOutput();
+	bool LoadShaders();
+	void CreateSpriteVerts();
 	void LoadData();
 	void UnloadData();
 
 	// Map of textures loaded
-	std::unordered_map<std::string, SDL_Texture*> mTextures;
+	std::unordered_map<std::string, class Texture*> mTextures;
 
 	// All the actors in the game
 	std::vector<class Actor*> mActors;
@@ -49,8 +51,13 @@ private:
 	// All the sprite components drawn
 	std::vector<class SpriteComponent*> mSprites;
 
+	// Sprite shader
+	class Shader* mSpriteShader;
+	// Sprite vertex array
+	class VertexArray* mSpriteVerts;
+
 	SDL_Window* mWindow;
-	SDL_Renderer* mRenderer;
+	SDL_GLContext mContext;
 	Uint32 mTicksCount;
 	bool mIsRunning;
 	// Track if we're updating actors right now
