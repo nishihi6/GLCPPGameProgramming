@@ -42,6 +42,9 @@ public:
 	float GetRotation() const { return mRotation; }
 	void SetRotation(float rotation) { mRotation = rotation; }
 
+	void ComputeWorldTransform();
+	const Matrix4& GetWorldTransform() const { return mWorldTransform; }
+
 	Vector2 GetForward() const { return Vector2(Math::Cos(mRotation), -Math::Sin(mRotation)); }
 
 	State GetState() const { return mState; }
@@ -58,9 +61,11 @@ private:
 	State mState;
 
 	// Transform
+	Matrix4 mWorldTransform;
 	Vector2 mPosition;
 	float mScale;
 	float mRotation;
+	bool mRecomputeWorldTransform;
 
 	std::vector<class Component*> mComponents;
 	class Game* mGame;

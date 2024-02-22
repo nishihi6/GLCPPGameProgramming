@@ -30,8 +30,11 @@
     <ClCompile Include="05\Math.cpp" />
     <ClCompile Include="05\MoveComponent.cpp" />
     <ClCompile Include="05\Random.cpp" />
+    <ClCompile Include="05\Shader.cpp" />
     <ClCompile Include="05\Ship.cpp" />
     <ClCompile Include="05\SpriteComponent.cpp" />
+    <ClCompile Include="05\Texture.cpp" />
+    <ClCompile Include="05\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="05\Actor.h" />
@@ -44,8 +47,18 @@
     <ClInclude Include="05\Math.h" />
     <ClInclude Include="05\MoveComponent.h" />
     <ClInclude Include="05\Random.h" />
+    <ClInclude Include="05\Shader.h" />
     <ClInclude Include="05\Ship.h" />
     <ClInclude Include="05\SpriteComponent.h" />
+    <ClInclude Include="05\Texture.h" />
+    <ClInclude Include="05\VertexArray.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="05\Shaders\Basic.frag" />
+    <Text Include="05\Shaders\Basic.vert" />
+    <Text Include="05\Shaders\Sprite.frag" />
+    <Text Include="05\Shaders\Sprite.vert" />
+    <Text Include="05\Shaders\Transform.vert" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
