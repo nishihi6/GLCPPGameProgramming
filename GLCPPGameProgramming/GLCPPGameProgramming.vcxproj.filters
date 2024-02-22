@@ -15,107 +15,125 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="05\Actor.cpp">
+    <ClCompile Include="06\Actor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Asteroid.cpp">
+    <ClCompile Include="06\CircleComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\CircleComponent.cpp">
+    <ClCompile Include="06\Component.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Component.cpp">
+    <ClCompile Include="06\Game.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Game.cpp">
+    <ClCompile Include="06\InputComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\InputComponent.cpp">
+    <ClCompile Include="06\Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Laser.cpp">
+    <ClCompile Include="06\Math.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Main.cpp">
+    <ClCompile Include="06\MoveComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Math.cpp">
+    <ClCompile Include="06\Random.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\MoveComponent.cpp">
+    <ClCompile Include="06\Shader.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Random.cpp">
+    <ClCompile Include="06\SpriteComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Ship.cpp">
+    <ClCompile Include="06\Texture.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\SpriteComponent.cpp">
+    <ClCompile Include="06\VertexArray.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\VertexArray.cpp">
+    <ClCompile Include="06\Mesh.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Shader.cpp">
+    <ClCompile Include="06\Renderer.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Texture.cpp">
+    <ClCompile Include="06\MeshComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="06\CameraActor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="06\PlaneActor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="05\Actor.h">
+    <ClInclude Include="06\Actor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Asteroid.h">
+    <ClInclude Include="06\CircleComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\CircleComponent.h">
+    <ClInclude Include="06\Component.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Component.h">
+    <ClInclude Include="06\Game.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Game.h">
+    <ClInclude Include="06\InputComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\InputComponent.h">
+    <ClInclude Include="06\Math.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Laser.h">
+    <ClInclude Include="06\MoveComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Math.h">
+    <ClInclude Include="06\Random.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\MoveComponent.h">
+    <ClInclude Include="06\Shader.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Random.h">
+    <ClInclude Include="06\SpriteComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Ship.h">
+    <ClInclude Include="06\Texture.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\SpriteComponent.h">
+    <ClInclude Include="06\VertexArray.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\VertexArray.h">
+    <ClInclude Include="06\Mesh.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Shader.h">
+    <ClInclude Include="06\Renderer.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Texture.h">
+    <ClInclude Include="06\MeshComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="06\CameraActor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="06\PlaneActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="05\Shaders\Basic.vert" />
-    <Text Include="05\Shaders\Basic.frag" />
-    <Text Include="05\Shaders\Transform.vert" />
-    <Text Include="05\Shaders\Sprite.vert" />
-    <Text Include="05\Shaders\Sprite.frag" />
+    <None Include="06\Shaders\Basic.frag" />
+    <None Include="06\Shaders\Basic.vert" />
+    <None Include="06\Shaders\Sprite.frag" />
+    <None Include="06\Shaders\Sprite.vert" />
+    <None Include="06\Shaders\Transform.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="06\Shaders\BasicMesh.vert" />
+    <Text Include="06\Shaders\BasicMesh.frag" />
+    <Text Include="06\Shaders\Phong.vert" />
+    <Text Include="06\Shaders\Phong.frag" />
   </ItemGroup>
 </Project>
