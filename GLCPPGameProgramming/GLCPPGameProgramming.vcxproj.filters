@@ -15,120 +15,120 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="05\Assets\Asteroid.png">
+    <Image Include="08\Assets\Asteroid.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="05\Assets\Laser.png">
+    <Image Include="08\Assets\Laser.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="05\Assets\Ship.png">
+    <Image Include="08\Assets\Ship.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="05\Assets\ShipWithThrust.png">
+    <Image Include="08\Assets\ShipWithThrust.png">
       <Filter>リソース ファイル</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <None Include="05\Shaders\Basic.frag" />
-    <None Include="05\Shaders\Basic.vert" />
-    <None Include="05\Shaders\Sprite.frag" />
-    <None Include="05\Shaders\Sprite.vert" />
-    <None Include="05\Shaders\Transform.vert" />
+    <None Include="08\Shaders\Basic.frag" />
+    <None Include="08\Shaders\Basic.vert" />
+    <None Include="08\Shaders\Sprite.frag" />
+    <None Include="08\Shaders\Sprite.vert" />
+    <None Include="08\Shaders\Transform.vert" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="05\Actor.cpp">
+    <ClCompile Include="08\Actor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Asteroid.cpp">
+    <ClCompile Include="08\Asteroid.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\CircleComponent.cpp">
+    <ClCompile Include="08\CircleComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Component.cpp">
+    <ClCompile Include="08\Component.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Game.cpp">
+    <ClCompile Include="08\Game.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\InputComponent.cpp">
+    <ClCompile Include="08\InputComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Laser.cpp">
+    <ClCompile Include="08\Laser.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Main.cpp">
+    <ClCompile Include="08\Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Math.cpp">
+    <ClCompile Include="08\Math.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\MoveComponent.cpp">
+    <ClCompile Include="08\MoveComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Random.cpp">
+    <ClCompile Include="08\Random.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Shader.cpp">
+    <ClCompile Include="08\Shader.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Ship.cpp">
+    <ClCompile Include="08\Ship.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\SpriteComponent.cpp">
+    <ClCompile Include="08\SpriteComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\Texture.cpp">
+    <ClCompile Include="08\Texture.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="05\VertexArray.cpp">
+    <ClCompile Include="08\VertexArray.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="05\Actor.h">
+    <ClInclude Include="08\Actor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Asteroid.h">
+    <ClInclude Include="08\Asteroid.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\CircleComponent.h">
+    <ClInclude Include="08\CircleComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Component.h">
+    <ClInclude Include="08\Component.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Game.h">
+    <ClInclude Include="08\Game.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\InputComponent.h">
+    <ClInclude Include="08\InputComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Laser.h">
+    <ClInclude Include="08\Laser.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Math.h">
+    <ClInclude Include="08\Math.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\MoveComponent.h">
+    <ClInclude Include="08\MoveComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Random.h">
+    <ClInclude Include="08\Random.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Shader.h">
+    <ClInclude Include="08\Shader.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Ship.h">
+    <ClInclude Include="08\Ship.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\SpriteComponent.h">
+    <ClInclude Include="08\SpriteComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\Texture.h">
+    <ClInclude Include="08\Texture.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="05\VertexArray.h">
+    <ClInclude Include="08\VertexArray.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
