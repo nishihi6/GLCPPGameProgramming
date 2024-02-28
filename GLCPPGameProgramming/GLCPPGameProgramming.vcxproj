@@ -19,56 +19,52 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="06\Actor.cpp" />
-    <ClCompile Include="06\CameraActor.cpp" />
-    <ClCompile Include="06\CircleComponent.cpp" />
-    <ClCompile Include="06\Component.cpp" />
-    <ClCompile Include="06\Game.cpp" />
-    <ClCompile Include="06\InputComponent.cpp" />
-    <ClCompile Include="06\Main.cpp" />
-    <ClCompile Include="06\Math.cpp" />
-    <ClCompile Include="06\Mesh.cpp" />
-    <ClCompile Include="06\MeshComponent.cpp" />
-    <ClCompile Include="06\MoveComponent.cpp" />
-    <ClCompile Include="06\PlaneActor.cpp" />
-    <ClCompile Include="06\Random.cpp" />
-    <ClCompile Include="06\Renderer.cpp" />
-    <ClCompile Include="06\Shader.cpp" />
-    <ClCompile Include="06\SpriteComponent.cpp" />
-    <ClCompile Include="06\Texture.cpp" />
-    <ClCompile Include="06\VertexArray.cpp" />
+    <Image Include="05\Assets\Asteroid.png" />
+    <Image Include="05\Assets\Laser.png" />
+    <Image Include="05\Assets\Ship.png" />
+    <Image Include="05\Assets\ShipWithThrust.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="06\Actor.h" />
-    <ClInclude Include="06\CameraActor.h" />
-    <ClInclude Include="06\CircleComponent.h" />
-    <ClInclude Include="06\Component.h" />
-    <ClInclude Include="06\Game.h" />
-    <ClInclude Include="06\InputComponent.h" />
-    <ClInclude Include="06\Math.h" />
-    <ClInclude Include="06\Mesh.h" />
-    <ClInclude Include="06\MeshComponent.h" />
-    <ClInclude Include="06\MoveComponent.h" />
-    <ClInclude Include="06\PlaneActor.h" />
-    <ClInclude Include="06\Random.h" />
-    <ClInclude Include="06\Renderer.h" />
-    <ClInclude Include="06\Shader.h" />
-    <ClInclude Include="06\SpriteComponent.h" />
-    <ClInclude Include="06\Texture.h" />
-    <ClInclude Include="06\VertexArray.h" />
+    <None Include="05\Shaders\Basic.frag" />
+    <None Include="05\Shaders\Basic.vert" />
+    <None Include="05\Shaders\Sprite.frag" />
+    <None Include="05\Shaders\Sprite.vert" />
+    <None Include="05\Shaders\Transform.vert" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="06\Shaders\Basic.frag" />
-    <None Include="06\Shaders\Basic.vert" />
-    <None Include="06\Shaders\Sprite.frag" />
-    <None Include="06\Shaders\Sprite.vert" />
-    <None Include="06\Shaders\Transform.vert" />
+    <ClCompile Include="05\Actor.cpp" />
+    <ClCompile Include="05\Asteroid.cpp" />
+    <ClCompile Include="05\CircleComponent.cpp" />
+    <ClCompile Include="05\Component.cpp" />
+    <ClCompile Include="05\Game.cpp" />
+    <ClCompile Include="05\InputComponent.cpp" />
+    <ClCompile Include="05\Laser.cpp" />
+    <ClCompile Include="05\Main.cpp" />
+    <ClCompile Include="05\Math.cpp" />
+    <ClCompile Include="05\MoveComponent.cpp" />
+    <ClCompile Include="05\Random.cpp" />
+    <ClCompile Include="05\Shader.cpp" />
+    <ClCompile Include="05\Ship.cpp" />
+    <ClCompile Include="05\SpriteComponent.cpp" />
+    <ClCompile Include="05\Texture.cpp" />
+    <ClCompile Include="05\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Text Include="06\Shaders\BasicMesh.frag" />
-    <Text Include="06\Shaders\BasicMesh.vert" />
-    <Text Include="06\Shaders\Phong.frag" />
-    <Text Include="06\Shaders\Phong.vert" />
+    <ClInclude Include="05\Actor.h" />
+    <ClInclude Include="05\Asteroid.h" />
+    <ClInclude Include="05\CircleComponent.h" />
+    <ClInclude Include="05\Component.h" />
+    <ClInclude Include="05\Game.h" />
+    <ClInclude Include="05\InputComponent.h" />
+    <ClInclude Include="05\Laser.h" />
+    <ClInclude Include="05\Math.h" />
+    <ClInclude Include="05\MoveComponent.h" />
+    <ClInclude Include="05\Random.h" />
+    <ClInclude Include="05\Shader.h" />
+    <ClInclude Include="05\Ship.h" />
+    <ClInclude Include="05\SpriteComponent.h" />
+    <ClInclude Include="05\Texture.h" />
+    <ClInclude Include="05\VertexArray.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
