@@ -19,54 +19,65 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <Image Include="08\Assets\Asteroid.png" />
-    <Image Include="08\Assets\Laser.png" />
-    <Image Include="08\Assets\Ship.png" />
-    <Image Include="08\Assets\ShipWithThrust.png" />
+    <None Include="09\Assets\Cube.gpmesh" />
+    <None Include="09\Assets\Plane.gpmesh" />
+    <None Include="09\Assets\Sphere.gpmesh" />
+    <None Include="09\Shaders\Basic.frag" />
+    <None Include="09\Shaders\Basic.vert" />
+    <None Include="09\Shaders\BasicMesh.frag" />
+    <None Include="09\Shaders\BasicMesh.vert" />
+    <None Include="09\Shaders\Phong.frag" />
+    <None Include="09\Shaders\Phong.vert" />
+    <None Include="09\Shaders\Sprite.frag" />
+    <None Include="09\Shaders\Sprite.vert" />
+    <None Include="09\Shaders\Transform.vert" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="08\Shaders\Basic.frag" />
-    <None Include="08\Shaders\Basic.vert" />
-    <None Include="08\Shaders\Sprite.frag" />
-    <None Include="08\Shaders\Sprite.vert" />
-    <None Include="08\Shaders\Transform.vert" />
+    <Image Include="09\Assets\Cube.png" />
+    <Image Include="09\Assets\Default.png" />
+    <Image Include="09\Assets\HealthBar.png" />
+    <Image Include="09\Assets\Plane.png" />
+    <Image Include="09\Assets\Radar.png" />
+    <Image Include="09\Assets\Sphere.png" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="08\Actor.cpp" />
-    <ClCompile Include="08\Asteroid.cpp" />
-    <ClCompile Include="08\CircleComponent.cpp" />
-    <ClCompile Include="08\Component.cpp" />
-    <ClCompile Include="08\Game.cpp" />
-    <ClCompile Include="08\InputComponent.cpp" />
-    <ClCompile Include="08\InputSystem.cpp" />
-    <ClCompile Include="08\Laser.cpp" />
-    <ClCompile Include="08\Main.cpp" />
-    <ClCompile Include="08\Math.cpp" />
-    <ClCompile Include="08\MoveComponent.cpp" />
-    <ClCompile Include="08\Random.cpp" />
-    <ClCompile Include="08\Shader.cpp" />
-    <ClCompile Include="08\Ship.cpp" />
-    <ClCompile Include="08\SpriteComponent.cpp" />
-    <ClCompile Include="08\Texture.cpp" />
-    <ClCompile Include="08\VertexArray.cpp" />
+    <ClCompile Include="09\Actor.cpp" />
+    <ClCompile Include="09\CameraActor.cpp" />
+    <ClCompile Include="09\CircleComponent.cpp" />
+    <ClCompile Include="09\Component.cpp" />
+    <ClCompile Include="09\Game.cpp" />
+    <ClCompile Include="09\InputComponent.cpp" />
+    <ClCompile Include="09\Main.cpp" />
+    <ClCompile Include="09\Math.cpp" />
+    <ClCompile Include="09\Mesh.cpp" />
+    <ClCompile Include="09\MeshComponent.cpp" />
+    <ClCompile Include="09\MoveComponent.cpp" />
+    <ClCompile Include="09\PlaneActor.cpp" />
+    <ClCompile Include="09\Random.cpp" />
+    <ClCompile Include="09\Renderer.cpp" />
+    <ClCompile Include="09\Shader.cpp" />
+    <ClCompile Include="09\SpriteComponent.cpp" />
+    <ClCompile Include="09\Texture.cpp" />
+    <ClCompile Include="09\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="08\Actor.h" />
-    <ClInclude Include="08\Asteroid.h" />
-    <ClInclude Include="08\CircleComponent.h" />
-    <ClInclude Include="08\Component.h" />
-    <ClInclude Include="08\Game.h" />
-    <ClInclude Include="08\InputComponent.h" />
-    <ClInclude Include="08\InputSystem.h" />
-    <ClInclude Include="08\Laser.h" />
-    <ClInclude Include="08\Math.h" />
-    <ClInclude Include="08\MoveComponent.h" />
-    <ClInclude Include="08\Random.h" />
-    <ClInclude Include="08\Shader.h" />
-    <ClInclude Include="08\Ship.h" />
-    <ClInclude Include="08\SpriteComponent.h" />
-    <ClInclude Include="08\Texture.h" />
-    <ClInclude Include="08\VertexArray.h" />
+    <ClInclude Include="09\Actor.h" />
+    <ClInclude Include="09\CameraActor.h" />
+    <ClInclude Include="09\CircleComponent.h" />
+    <ClInclude Include="09\Component.h" />
+    <ClInclude Include="09\Game.h" />
+    <ClInclude Include="09\InputComponent.h" />
+    <ClInclude Include="09\Math.h" />
+    <ClInclude Include="09\Mesh.h" />
+    <ClInclude Include="09\MeshComponent.h" />
+    <ClInclude Include="09\MoveComponent.h" />
+    <ClInclude Include="09\PlaneActor.h" />
+    <ClInclude Include="09\Random.h" />
+    <ClInclude Include="09\Renderer.h" />
+    <ClInclude Include="09\Shader.h" />
+    <ClInclude Include="09\SpriteComponent.h" />
+    <ClInclude Include="09\Texture.h" />
+    <ClInclude Include="09\VertexArray.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -126,13 +137,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)\External\SDL\include\;$(SolutionDir)\External\GLEW\include\;$(SolutionDir)\External\SOIL\include\;$(SolutionDir)\External\rapidjson\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\External\SDL\include\;$(SolutionDir)\External\GLEW\include\;$(SolutionDir)\External\SOIL\include\;$(SolutionDir)\External\rapidjson\include\;C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\studio\inc;C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(SolutionDir)\External\SDL\lib\win\x86\;$(SolutionDir)\External\GLEW\lib\win\x86\;$(SolutionDir)\External\SOIL\lib\win\x86\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>opengl32.lib;SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_mixer.lib;SDL2_image.lib;glew32.lib;SOIL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\External\SDL\lib\win\x86\;$(SolutionDir)\External\GLEW\lib\win\x86\;$(SolutionDir)\External\SOIL\lib\win\x86\;C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\studio\lib;C:\Program Files (x86)\FMOD SoundSystem\FMOD Studio API Windows\api\lowlevel\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL2.lib;SDL2main.lib;SDL2_ttf.lib;SDL2_mixer.lib;SDL2_image.lib;glew32.lib;SOIL.lib;fmodL_vc.lib;fmodstudioL_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>xcopy "$(ProjectDir)\..\External\SDL\lib\win\x86\*.dll" "$(OutDir)" /i /s /y</Command>
