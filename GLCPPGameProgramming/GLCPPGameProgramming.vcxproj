@@ -38,6 +38,7 @@
     <ClCompile Include="08\Component.cpp" />
     <ClCompile Include="08\Game.cpp" />
     <ClCompile Include="08\InputComponent.cpp" />
+    <ClCompile Include="08\InputSystem.cpp" />
     <ClCompile Include="08\Laser.cpp" />
     <ClCompile Include="08\Main.cpp" />
     <ClCompile Include="08\Math.cpp" />
@@ -56,6 +57,7 @@
     <ClInclude Include="08\Component.h" />
     <ClInclude Include="08\Game.h" />
     <ClInclude Include="08\InputComponent.h" />
+    <ClInclude Include="08\InputSystem.h" />
     <ClInclude Include="08\Laser.h" />
     <ClInclude Include="08\Math.h" />
     <ClInclude Include="08\MoveComponent.h" />

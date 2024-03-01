@@ -45,6 +45,9 @@ private:
 
 	// All the actors in the game
 	std::vector<class Actor*> mActors;
+
+	class InputSystem* mInputSystem;
+
 	// Any pending actors
 	std::vector<class Actor*> mPendingActors;
 

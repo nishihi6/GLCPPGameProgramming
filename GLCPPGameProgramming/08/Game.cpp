@@ -17,6 +17,7 @@
 #include "Ship.h"
 #include "Asteroid.h"
 #include "Random.h"
+#include "InputSystem.h"
 
 Game::Game()
 	:mWindow(nullptr)
@@ -27,7 +28,7 @@ Game::Game()
 }
 
 bool Game::Initialize() {
-	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO) != 0) {
+	if (SDL_Init(SDL_INIT_VIDEO | SDL_INIT_AUDIO | SDL_INIT_GAMECONTROLLER) != 0) {
 		SDL_Log("Unable to initialize SDL: %s", SDL_GetError());
 		return false;
 	}
@@ -48,9 +49,16 @@ bool Game::Initialize() {
 	// Force OpenGL to use hardware acceleration
 	SDL_GL_SetAttribute(SDL_GL_ACCELERATED_VISUAL, 1);
 
-	mWindow = SDL_CreateWindow("Game Programming in C++ (Chapter 5)", 100, 100, 1024, 768, SDL_WINDOW_OPENGL);
+	mWindow = SDL_CreateWindow("Game Programming in C++ (Chapter 8)", 100, 100, 1024, 768, SDL_WINDOW_OPENGL);
 	if (!mWindow) {
 		SDL_Log("Failed to create window: %s", SDL_GetError());
+		return false;
+	}
+
+	// Initialize input system
+	mInputSystem = new InputSystem();
+	if (!mInputSystem->Initialize()) {
+		SDL_Log("Failed to initialize input system");
 		return false;
 	}
 
@@ -105,23 +113,31 @@ void Game::RunLoop() {
 }
 
 void Game::ProcessInput() {
+	mInputSystem->PrepareForUpdate();
+	
 	SDL_Event event;
 	while (SDL_PollEvent(&event)) {
 		switch (event.type) {
-		case SDL_QUIT:
-			mIsRunning = false;
-			break;
+			case SDL_QUIT:
+				mIsRunning = false;
+				break;
+			case SDL_MOUSEWHEEL:
+				mInputSystem->ProcessEvent(event);
+				break;
+			default:
+				break;
 		}
 	}
 
-	const Uint8* keyState = SDL_GetKeyboardState(NULL);
-	if (keyState[SDL_SCANCODE_ESCAPE]) {
+	mInputSystem->Update();
+	const InputState& state = mInputSystem->GetState();
+	if (state.Keyboard.GetKeyState(SDL_SCANCODE_ESCAPE) == EReleased) {
 		mIsRunning = false;
 	}
 
 	mUpdatingActors = true;
 	for (auto actor : mActors) {
-		actor->ProcessInput(keyState);
+		actor->ProcessInput(state);
 	}
 	mUpdatingActors = false;
 }
@@ -279,6 +295,10 @@ void Game::RemoveAsteroid(Asteroid* ast) {
 
 void Game::Shutdown() {
 	UnloadData();
+	
+	mInputSystem->Shutdown();
+	delete mInputSystem;
+	
 	delete mSpriteVerts;
 	mSpriteShader->Unload();
 	delete mSpriteShader;
