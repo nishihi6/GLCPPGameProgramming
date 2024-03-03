@@ -27,6 +27,10 @@
     <None Include="09\Shaders\Sprite.frag" />
     <None Include="09\Shaders\Sprite.vert" />
     <None Include="09\Shaders\Transform.vert" />
+    <None Include="09\Assets\Master Bank.bank" />
+    <None Include="09\Assets\Master Bank.strings.bank" />
+    <None Include="09\Assets\RacingCar.gpmesh" />
+    <None Include="09\Assets\Rifle.gpmesh" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="09\Assets\Cube.png">
@@ -45,6 +49,15 @@
       <Filter>リソース ファイル</Filter>
     </Image>
     <Image Include="09\Assets\Sphere.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="09\Assets\Crosshair.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="09\Assets\RacingCar.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="09\Assets\Rifle.png">
       <Filter>リソース ファイル</Filter>
     </Image>
   </ItemGroup>
@@ -103,6 +116,42 @@
     <ClCompile Include="09\VertexArray.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="09\AudioSystem.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\SoundEvent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\AudioComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\CameraComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\FollowActor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\FollowCamera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\FPSCamera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\FPSActor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\OrbitActor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\OrbitCamera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\SplineCamera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="09\SplineActor.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="09\Actor.h">
@@ -154,6 +203,42 @@
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="09\VertexArray.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\AudioSystem.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\SoundEvent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\AudioComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\CameraComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\FollowActor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\FollowCamera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\FPSCamera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\FPSActor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\OrbitActor.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\OrbitCamera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\SplineCamera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="09\SplineActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>

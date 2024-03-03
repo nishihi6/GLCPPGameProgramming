@@ -11,6 +11,8 @@
 #include <unordered_map>
 #include <string>
 #include <vector>
+#include "Math.h"
+#include "SoundEvent.h"
 
 class Game {
 public:
@@ -23,8 +25,10 @@ public:
 	void RemoveActor(class Actor* actor);
 
 	class Renderer* GetRenderer() { return mRenderer; }
+	class AudioSystem* GetAudioSystem() { return mAudioSystem; }
 private:
 	void ProcessInput();
+	void HandleKeyPress(int key);
 	void UpdateGame();
 	void GenerateOutput();
 	void LoadData();
@@ -36,6 +40,7 @@ private:
 	std::vector<class Actor*> mPendingActors;
 
 	class Renderer* mRenderer;
+	class AudioSystem* mAudioSystem;
 
 	Uint32 mTicksCount;
 	bool mIsRunning;
@@ -43,5 +48,14 @@ private:
 	bool mUpdatingActors;
 
 	// Game-specific code
-	class CameraActor* mCameraActor;
+	class FPSActor* mFPSActor;
+	class FollowActor* mFollowActor;
+	class OrbitActor* mOrbitActor;
+	class SplineActor* mSplineActor;
+	class Actor* mStartSphere;
+	class Actor* mEndSphere;
+	class SpriteComponent* mCrosshair;
+	SoundEvent mMusicEvent;
+	SoundEvent mReverbSnap;
+	void ChangeCamera(int mode);
 };

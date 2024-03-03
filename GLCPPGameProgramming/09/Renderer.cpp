@@ -137,7 +137,9 @@ void Renderer::Draw() {
 	mSpriteShader->SetActive();
 	mSpriteVerts->SetActive();
 	for (auto sprite : mSprites) {
-		sprite->Draw(mSpriteShader);
+		if (sprite->GetVisible()) {
+			sprite->Draw(mSpriteShader);
+		}
 	}
 
 	// Swap the buffers
@@ -271,4 +273,28 @@ void Renderer::SetLightUniforms(Shader* shader) {
 		mDirLight.mDiffuseColor);
 	shader->SetVectorUniform("uDirLight.mSpecColor",
 		mDirLight.mSpecColor);
+}
+
+Vector3 Renderer::Unproject(const Vector3& screenPoint) const {
+	// Convert screenPoint to device coordinates (between -1 and +1)
+	Vector3 deviceCoord = screenPoint;
+	deviceCoord.x /= (mScreenWidth) * 0.5f;
+	deviceCoord.y /= (mScreenHeight) * 0.5f;
+
+	// Transform vector by unprojection matrix
+	Matrix4 unprojection = mView * mProjection;
+	unprojection.Invert();
+	return Vector3::TransformWithPerspDiv(deviceCoord, unprojection);
+}
+
+void Renderer::GetScreenDirection(Vector3& outStart, Vector3& outDir) const {
+	// Get start point (in center of screen on near plane)
+	Vector3 screenPoint(0.0f, 0.0f, 0.0f);
+	outStart = Unproject(screenPoint);
+	// Get end point (in center of screen, between near and far)
+	screenPoint.z = 0.9f;
+	Vector3 end = Unproject(screenPoint);
+	// Get direction vector
+	outDir = end - outStart;
+	outDir.Normalize();
 }

@@ -20,7 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="09\Assets\Cube.gpmesh" />
+    <None Include="09\Assets\Master Bank.bank" />
+    <None Include="09\Assets\Master Bank.strings.bank" />
     <None Include="09\Assets\Plane.gpmesh" />
+    <None Include="09\Assets\RacingCar.gpmesh" />
+    <None Include="09\Assets\Rifle.gpmesh" />
     <None Include="09\Assets\Sphere.gpmesh" />
     <None Include="09\Shaders\Basic.frag" />
     <None Include="09\Shaders\Basic.vert" />
@@ -33,18 +37,28 @@
     <None Include="09\Shaders\Transform.vert" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="09\Assets\Crosshair.png" />
     <Image Include="09\Assets\Cube.png" />
     <Image Include="09\Assets\Default.png" />
     <Image Include="09\Assets\HealthBar.png" />
     <Image Include="09\Assets\Plane.png" />
+    <Image Include="09\Assets\RacingCar.png" />
     <Image Include="09\Assets\Radar.png" />
+    <Image Include="09\Assets\Rifle.png" />
     <Image Include="09\Assets\Sphere.png" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="09\Actor.cpp" />
+    <ClCompile Include="09\AudioComponent.cpp" />
+    <ClCompile Include="09\AudioSystem.cpp" />
     <ClCompile Include="09\CameraActor.cpp" />
+    <ClCompile Include="09\CameraComponent.cpp" />
     <ClCompile Include="09\CircleComponent.cpp" />
     <ClCompile Include="09\Component.cpp" />
+    <ClCompile Include="09\FollowActor.cpp" />
+    <ClCompile Include="09\FollowCamera.cpp" />
+    <ClCompile Include="09\FPSActor.cpp" />
+    <ClCompile Include="09\FPSCamera.cpp" />
     <ClCompile Include="09\Game.cpp" />
     <ClCompile Include="09\InputComponent.cpp" />
     <ClCompile Include="09\Main.cpp" />
@@ -52,29 +66,46 @@
     <ClCompile Include="09\Mesh.cpp" />
     <ClCompile Include="09\MeshComponent.cpp" />
     <ClCompile Include="09\MoveComponent.cpp" />
+    <ClCompile Include="09\OrbitActor.cpp" />
+    <ClCompile Include="09\OrbitCamera.cpp" />
     <ClCompile Include="09\PlaneActor.cpp" />
     <ClCompile Include="09\Random.cpp" />
     <ClCompile Include="09\Renderer.cpp" />
     <ClCompile Include="09\Shader.cpp" />
+    <ClCompile Include="09\SoundEvent.cpp" />
+    <ClCompile Include="09\SplineActor.cpp" />
+    <ClCompile Include="09\SplineCamera.cpp" />
     <ClCompile Include="09\SpriteComponent.cpp" />
     <ClCompile Include="09\Texture.cpp" />
     <ClCompile Include="09\VertexArray.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="09\Actor.h" />
+    <ClInclude Include="09\AudioComponent.h" />
+    <ClInclude Include="09\AudioSystem.h" />
     <ClInclude Include="09\CameraActor.h" />
+    <ClInclude Include="09\CameraComponent.h" />
     <ClInclude Include="09\CircleComponent.h" />
     <ClInclude Include="09\Component.h" />
+    <ClInclude Include="09\FollowActor.h" />
+    <ClInclude Include="09\FollowCamera.h" />
+    <ClInclude Include="09\FPSActor.h" />
+    <ClInclude Include="09\FPSCamera.h" />
     <ClInclude Include="09\Game.h" />
     <ClInclude Include="09\InputComponent.h" />
     <ClInclude Include="09\Math.h" />
     <ClInclude Include="09\Mesh.h" />
     <ClInclude Include="09\MeshComponent.h" />
     <ClInclude Include="09\MoveComponent.h" />
+    <ClInclude Include="09\OrbitActor.h" />
+    <ClInclude Include="09\OrbitCamera.h" />
     <ClInclude Include="09\PlaneActor.h" />
     <ClInclude Include="09\Random.h" />
     <ClInclude Include="09\Renderer.h" />
     <ClInclude Include="09\Shader.h" />
+    <ClInclude Include="09\SoundEvent.h" />
+    <ClInclude Include="09\SplineActor.h" />
+    <ClInclude Include="09\SplineCamera.h" />
     <ClInclude Include="09\SpriteComponent.h" />
     <ClInclude Include="09\Texture.h" />
     <ClInclude Include="09\VertexArray.h" />
