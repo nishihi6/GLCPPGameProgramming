@@ -36,16 +36,17 @@ public:
 
 	// Getters/setters
 	const Vector3& GetPosition() const { return mPosition; }
-	void SetPosition(const Vector3& pos) { mPosition = pos; }
+	void SetPosition(const Vector3& pos) { mPosition = pos; mRecomputeWorldTransform = true; }
 	float GetScale() const { return mScale; }
-	void SetScale(float scale) { mScale = scale; }
+	void SetScale(float scale) { mScale = scale; mRecomputeWorldTransform = true; }
 	const Quaternion& GetRotation() const { return mRotation; }
-	void SetRotation(const Quaternion& rotation) { mRotation = rotation; }
+	void SetRotation(const Quaternion& rotation) { mRotation = rotation; mRecomputeWorldTransform = true; }
 
 	void ComputeWorldTransform();
 	const Matrix4& GetWorldTransform() const { return mWorldTransform; }
 
 	Vector3 GetForward() const { return Vector3::Transform(Vector3::UnitX, mRotation); }
+	Vector3 GetRight() const { return Vector3::Transform(Vector3::UnitY, mRotation); }
 
 	State GetState() const { return mState; }
 	void SetState(State state) { mState = state; }
