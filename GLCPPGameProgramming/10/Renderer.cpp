@@ -122,7 +122,9 @@ void Renderer::Draw() {
 	// Update lighting uniforms
 	SetLightUniforms(mMeshShader);
 	for (auto mc : mMeshComps) {
-		mc->Draw(mMeshShader);
+		if (mc->GetVisible()) {
+			mc->Draw(mMeshShader);
+		}
 	}
 
 	// Draw all sprite components

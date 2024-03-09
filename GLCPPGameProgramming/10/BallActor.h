@@ -9,14 +9,16 @@
 #pragma once
 #include "Actor.h"
 
-class OrbitActor : public Actor {
+class BallActor : public Actor {
 public:
-	OrbitActor(class Game* game);
+	BallActor(class Game* game);
 
-	void ActorInput(const uint8_t* keys) override;
+	void UpdateActor(float deltaTime) override;
+	void SetPlayer(Actor* player);
 
-	void SetVisible(bool visible);
+	void HitTarget();
 private:
-	class OrbitCamera* mCameraComp;
-	class MeshComponent* mMeshComp;
+	class AudioComponent* mAudioComp;
+	class BallMove* mMyMove;
+	float mLifeSpan;
 };
