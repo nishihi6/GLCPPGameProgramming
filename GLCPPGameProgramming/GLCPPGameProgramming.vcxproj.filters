@@ -45,6 +45,36 @@
     <Image Include="11\Assets\Target.png">
       <Filter>リソース ファイル</Filter>
     </Image>
+    <Image Include="11\Assets\Arrow.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\Blip.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\BlipDown.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\BlipUp.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\ButtonBlue.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\ButtonYellow.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\CrosshairGreen.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\CrosshairRed.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\DialogBG.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
+    <Image Include="11\Assets\RadarArrow.png">
+      <Filter>リソース ファイル</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="11\Assets\Cube.gpmesh" />
@@ -64,6 +94,8 @@
     <None Include="11\Shaders\Sprite.frag" />
     <None Include="11\Shaders\Sprite.vert" />
     <None Include="11\Shaders\Transform.vert" />
+    <None Include="11\Assets\English.gptext" />
+    <None Include="11\Assets\Russian.gptext" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="11\Actor.cpp">
@@ -147,6 +179,24 @@
     <ClCompile Include="11\VertexArray.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="11\DialogBox.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="11\Font.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="11\HUD.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="11\PauseMenu.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="11\TargetComponent.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="11\UIScreen.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="11\Actor.h">
@@ -227,5 +277,26 @@
     <ClInclude Include="11\VertexArray.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
+    <ClInclude Include="11\DialogBox.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="11\Font.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="11\HUD.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="11\PauseMenu.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="11\TargetComponent.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="11\UIScreen.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="11\Assets\Carlito-Regular.ttf" />
   </ItemGroup>
 </Project>
