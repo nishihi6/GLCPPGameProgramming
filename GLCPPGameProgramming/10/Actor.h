@@ -42,6 +42,8 @@ public:
 	const Quaternion& GetRotation() const { return mRotation; }
 	void SetRotation(const Quaternion& rotation) { mRotation = rotation; mRecomputeWorldTransform = true; }
 
+	void RotateToNewForward(const Vector3& forward);
+
 	void ComputeWorldTransform();
 	const Matrix4& GetWorldTransform() const { return mWorldTransform; }
 

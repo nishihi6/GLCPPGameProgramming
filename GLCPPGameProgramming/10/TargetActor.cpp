@@ -1,4 +1,4 @@
-﻿// ----------------------------------------------------------------
+// ----------------------------------------------------------------
 // From Game Programming in C++ by Sanjay Madhav
 // Copyright (C) 2017 Sanjay Madhav. All rights reserved.
 // 
@@ -6,26 +6,20 @@
 // See LICENSE in root directory for full details.
 // ----------------------------------------------------------------
 
-#include "PlaneActor.h"
+#include "TargetActor.h"
 #include "Game.h"
 #include "Renderer.h"
 #include "MeshComponent.h"
 #include "BoxComponent.h"
 #include "Mesh.h"
 
-PlaneActor::PlaneActor(Game* game)
-	:Actor(game) {
-	SetScale(10.0f);
+TargetActor::TargetActor(Game* game):Actor(game) {
+	//SetScale(10.0f);
+	SetRotation(Quaternion(Vector3::UnitZ, Math::Pi));
 	MeshComponent* mc = new MeshComponent(this);
-	Mesh* mesh = GetGame()->GetRenderer()->GetMesh("10/Assets/Plane.gpmesh");
+	Mesh* mesh = GetGame()->GetRenderer()->GetMesh("10/Assets/Target.gpmesh");
 	mc->SetMesh(mesh);
 	// Add collision box
-	mBox = new BoxComponent(this);
-	mBox->SetObjectBox(mesh->GetBox());
-
-	game->AddPlane(this);
-}
-
-PlaneActor::~PlaneActor() {
-	GetGame()->RemovePlane(this);
+	BoxComponent* bc = new BoxComponent(this);
+	bc->SetObjectBox(mesh->GetBox());
 }

@@ -7,14 +7,14 @@
 // ----------------------------------------------------------------
 
 #pragma once
-#include "Actor.h"
+#include "MoveComponent.h"
 
-class CameraActor : public Actor {
+class BallMove : public MoveComponent {
 public:
-	CameraActor(class Game* game);
+	BallMove(class Actor* owner);
 
-	void UpdateActor(float deltaTime) override;
-	void ActorInput(const uint8_t* keys) override;
-private:
-	class MoveComponent* mMoveComp;
+	void SetPlayer(Actor* player) { mPlayer = player; }
+	void Update(float deltaTime) override;
+protected:
+	class Actor* mPlayer;
 };
