@@ -15,230 +15,230 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="09\Assets\Cube.gpmesh" />
-    <None Include="09\Assets\Plane.gpmesh" />
-    <None Include="09\Assets\Sphere.gpmesh" />
-    <None Include="09\Shaders\Basic.frag" />
-    <None Include="09\Shaders\Basic.vert" />
-    <None Include="09\Shaders\BasicMesh.frag" />
-    <None Include="09\Shaders\BasicMesh.vert" />
-    <None Include="09\Shaders\Phong.frag" />
-    <None Include="09\Shaders\Phong.vert" />
-    <None Include="09\Shaders\Sprite.frag" />
-    <None Include="09\Shaders\Sprite.vert" />
-    <None Include="09\Shaders\Transform.vert" />
-    <None Include="09\Assets\Master Bank.bank" />
-    <None Include="09\Assets\Master Bank.strings.bank" />
-    <None Include="09\Assets\RacingCar.gpmesh" />
-    <None Include="09\Assets\Rifle.gpmesh" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="09\Assets\Cube.png">
+    <Image Include="10\Assets\Crosshair.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\Default.png">
+    <Image Include="10\Assets\Cube.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\HealthBar.png">
+    <Image Include="10\Assets\Default.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\Plane.png">
+    <Image Include="10\Assets\HealthBar.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\Radar.png">
+    <Image Include="10\Assets\Plane.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\Sphere.png">
+    <Image Include="10\Assets\RacingCar.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\Crosshair.png">
+    <Image Include="10\Assets\Radar.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\RacingCar.png">
+    <Image Include="10\Assets\Rifle.png">
       <Filter>リソース ファイル</Filter>
     </Image>
-    <Image Include="09\Assets\Rifle.png">
+    <Image Include="10\Assets\Sphere.png">
       <Filter>リソース ファイル</Filter>
     </Image>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="09\Actor.cpp">
+    <None Include="10\Assets\Cube.gpmesh" />
+    <None Include="10\Assets\Master Bank.bank" />
+    <None Include="10\Assets\Master Bank.strings.bank" />
+    <None Include="10\Assets\Plane.gpmesh" />
+    <None Include="10\Assets\RacingCar.gpmesh" />
+    <None Include="10\Assets\Rifle.gpmesh" />
+    <None Include="10\Assets\Sphere.gpmesh" />
+    <None Include="10\Shaders\Basic.frag" />
+    <None Include="10\Shaders\Basic.vert" />
+    <None Include="10\Shaders\BasicMesh.frag" />
+    <None Include="10\Shaders\BasicMesh.vert" />
+    <None Include="10\Shaders\Phong.frag" />
+    <None Include="10\Shaders\Phong.vert" />
+    <None Include="10\Shaders\Sprite.frag" />
+    <None Include="10\Shaders\Sprite.vert" />
+    <None Include="10\Shaders\Transform.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="10\Actor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\CameraActor.cpp">
+    <ClCompile Include="10\AudioComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\CircleComponent.cpp">
+    <ClCompile Include="10\AudioSystem.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Component.cpp">
+    <ClCompile Include="10\CameraActor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Game.cpp">
+    <ClCompile Include="10\CameraComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\InputComponent.cpp">
+    <ClCompile Include="10\CircleComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Main.cpp">
+    <ClCompile Include="10\Component.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Math.cpp">
+    <ClCompile Include="10\FollowActor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Mesh.cpp">
+    <ClCompile Include="10\FollowCamera.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\MeshComponent.cpp">
+    <ClCompile Include="10\FPSActor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\MoveComponent.cpp">
+    <ClCompile Include="10\FPSCamera.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\PlaneActor.cpp">
+    <ClCompile Include="10\Game.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Random.cpp">
+    <ClCompile Include="10\InputComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Renderer.cpp">
+    <ClCompile Include="10\Main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Shader.cpp">
+    <ClCompile Include="10\Math.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\SpriteComponent.cpp">
+    <ClCompile Include="10\Mesh.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\Texture.cpp">
+    <ClCompile Include="10\MeshComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\VertexArray.cpp">
+    <ClCompile Include="10\MoveComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\AudioSystem.cpp">
+    <ClCompile Include="10\OrbitActor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\SoundEvent.cpp">
+    <ClCompile Include="10\OrbitCamera.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\AudioComponent.cpp">
+    <ClCompile Include="10\PlaneActor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\CameraComponent.cpp">
+    <ClCompile Include="10\Random.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\FollowActor.cpp">
+    <ClCompile Include="10\Renderer.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\FollowCamera.cpp">
+    <ClCompile Include="10\Shader.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\FPSCamera.cpp">
+    <ClCompile Include="10\SoundEvent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\FPSActor.cpp">
+    <ClCompile Include="10\SplineActor.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\OrbitActor.cpp">
+    <ClCompile Include="10\SplineCamera.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\OrbitCamera.cpp">
+    <ClCompile Include="10\SpriteComponent.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\SplineCamera.cpp">
+    <ClCompile Include="10\Texture.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="09\SplineActor.cpp">
+    <ClCompile Include="10\VertexArray.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="09\Actor.h">
+    <ClInclude Include="10\Actor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\CameraActor.h">
+    <ClInclude Include="10\AudioComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\CircleComponent.h">
+    <ClInclude Include="10\AudioSystem.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Component.h">
+    <ClInclude Include="10\CameraActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Game.h">
+    <ClInclude Include="10\CameraComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\InputComponent.h">
+    <ClInclude Include="10\CircleComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Math.h">
+    <ClInclude Include="10\Component.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Mesh.h">
+    <ClInclude Include="10\FollowActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\MeshComponent.h">
+    <ClInclude Include="10\FollowCamera.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\MoveComponent.h">
+    <ClInclude Include="10\FPSActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\PlaneActor.h">
+    <ClInclude Include="10\FPSCamera.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Random.h">
+    <ClInclude Include="10\Game.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Renderer.h">
+    <ClInclude Include="10\InputComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Shader.h">
+    <ClInclude Include="10\Math.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\SpriteComponent.h">
+    <ClInclude Include="10\Mesh.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\Texture.h">
+    <ClInclude Include="10\MeshComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\VertexArray.h">
+    <ClInclude Include="10\MoveComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\AudioSystem.h">
+    <ClInclude Include="10\OrbitActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\SoundEvent.h">
+    <ClInclude Include="10\OrbitCamera.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\AudioComponent.h">
+    <ClInclude Include="10\PlaneActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\CameraComponent.h">
+    <ClInclude Include="10\Random.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\FollowActor.h">
+    <ClInclude Include="10\Renderer.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\FollowCamera.h">
+    <ClInclude Include="10\Shader.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\FPSCamera.h">
+    <ClInclude Include="10\SoundEvent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\FPSActor.h">
+    <ClInclude Include="10\SplineActor.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\OrbitActor.h">
+    <ClInclude Include="10\SplineCamera.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\OrbitCamera.h">
+    <ClInclude Include="10\SpriteComponent.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\SplineCamera.h">
+    <ClInclude Include="10\Texture.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="09\SplineActor.h">
+    <ClInclude Include="10\VertexArray.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
